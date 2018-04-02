@@ -1,0 +1,14 @@
+navel orange
+yellow banana
+red apple
+yellow banana
+red    apple
+green apple
+navel          orange
+green apple
+green mango
+navel orange
+strawberry
+red apple
+Red apple
+apple
