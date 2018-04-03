@@ -1,5 +1,4 @@
 #include "match.h"
-
 Bool match(char s1[], char s2[], int arg){ 
   char* string1; 
   char* string2;
@@ -28,6 +27,6 @@ char* getFields(char s[], int arg){
       else
         p++; //p increments one character if a whitespace wasnt encountered
     }
-  }
+  } 
   return p; //returns a pointer to the first charcter of the (f+1)th field.
 }

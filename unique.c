@@ -46,11 +46,14 @@ int main(int argc, char* argv[]){ //idiom from text
   struct node* cur;
   while(i != 0){
     i = getLine(line, MAX_LINE_LENGTH);
-    list = addLine(list, line, argument);
+    if (i > 0){
+       list = addLine(list, line, argument);
+    }
     *line = line[0];
   }
   for(cur = list; cur->next != NULL; cur = cur->next){
     printf("%s\n", cur->line);
   }
+  printf("%s\n", cur->line);
  
 }

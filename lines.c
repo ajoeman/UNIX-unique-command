@@ -37,6 +37,9 @@ struct node* addLine(struct node* list, char line[], int arg){
 	 goto end; //end the function if a match is found.
        }
     }
+    if(match((cur->line), line, arg)){
+	goto end;
+     }
     strcpy(entry->line, line);
     entry->next = NULL;
     cur->next = entry;
