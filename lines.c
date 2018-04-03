@@ -23,7 +23,7 @@ int getLine (char str[], int n){
 }
 
  
-struct node* addLine(struct node* list, char line[]){
+struct node* addLine(struct node* list, char line[], int arg){
   struct node* cur = list;
   struct node* entry;
   entry = malloc(sizeof(struct node));
@@ -33,7 +33,7 @@ struct node* addLine(struct node* list, char line[]){
     list = entry;
   }else{
     for(; cur->next != NULL; cur = cur->next){ //idiom from text p430
-      if(match((cur->line), line)){
+      if(match((cur->line), line, arg)){
 	 // free(entry); //release the memory allocated for the entry.
 	 goto end; 
        }

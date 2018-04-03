@@ -24,5 +24,5 @@ int getLine(char str[], int n);
  * the end of the list without finding a match, it initializes a Node with *
  * the value of line and points the last node in the list to it.           *
  ***************************************************************************/
-struct node* addLine(struct node* list, char line[]);
+struct node* addLine(struct node* list, char line[], int arg);
 #endif
