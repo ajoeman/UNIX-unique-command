@@ -1,7 +1,14 @@
 #ifndef LINES_H
 #define LINE_H
 #define MAX_LINE_LENGTH 80
-struct node{
+/***************************************************************************
+ * lines.c uses a linked list composed of nodes to store the unique strings*
+ * from stdin. The node structure is declared below. The structure for node*
+ * was based from the linked list described in section 17.5 of the course  *
+ * text. Each node contains a String and a pointer to the subsequent node  *
+ * in the linked list.                                                     *
+ **************************************************************************/
+struct node{ 
   char line[MAX_LINE_LENGTH + 1];
   struct node* next;
 };
